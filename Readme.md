@@ -5,6 +5,9 @@ Basic Requirement
 ### 3. The numbers that can be used are in the range from 1 to N where N is the length of a side.
 ### 4. All the number with in a given row, column and region should be unique 
  
+ Class Diagram
+============================
+![class diagram](Sudoku.jpg)
 
 Assumption
 =====================

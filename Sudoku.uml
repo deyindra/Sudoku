@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="266.35124999999994" y="0.5">com.flurry.sudoku.exception.SudokuException</node>
+    <node x="0.0" y="573.5">com.flurry.sudoku.controller.ISudokuController</node>
+    <node x="106.29499999999996" y="403.0">com.flurry.sudoku.validator.RowSudokuValidator</node>
+    <node x="289.29499999999996" y="403.0">com.flurry.sudoku.validator.ColSudokuValidator</node>
+    <node x="878.25" y="0.0">com.flurry.sudoku.reader.ISudokuReader</node>
+    <node x="366.43125" y="687.0">com.flurry.sudoku.controller.InMemorySudokuController</node>
+    <node x="568.25" y="11.5">com.flurry.sudoku.validator.IValidator</node>
+    <node x="553.25" y="180.0">com.flurry.sudoku.validator.AbstractSudokuValidator</node>
+    <node x="497.43125" y="835.0">com.flurry.sudoku.Main</node>
+    <node x="249.0" y="562.0">com.flurry.sudoku.validator.SingleThreadedSudokuValidator</node>
+    <node x="467.29499999999996" y="392.0">com.flurry.sudoku.validator.BlockSudokuValidator</node>
+    <node x="0.0" y="977.0">com.flurry.sudoku.util.Utils</node>
+    <node x="803.25" y="135.0">com.flurry.sudoku.reader.InMemorySudokuReader</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.flurry.sudoku.validator.BlockSudokuValidator" target="com.flurry.sudoku.validator.AbstractSudokuValidator">
+      <point x="42.75" y="-60.0" />
+      <point x="595.545" y="372.0" />
+      <point x="668.25" y="372.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.controller.InMemorySudokuController" target="com.flurry.sudoku.controller.ISudokuController">
+      <point x="-169.875" y="-49.0" />
+      <point x="423.05625" y="662.0" />
+      <point x="114.5" y="662.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.AbstractSudokuValidator" target="com.flurry.sudoku.reader.ISudokuReader">
+      <point x="76.66666666666669" y="-48.5" />
+      <point x="744.9166666666666" y="115.0" />
+      <point x="928.0" y="115.0" />
+      <point x="-49.75" y="37.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.SingleThreadedSudokuValidator" target="com.flurry.sudoku.validator.AbstractSudokuValidator">
+      <point x="141.75" y="-37.5" />
+      <point x="579.75" y="537.0" />
+      <point x="731.75" y="537.0" />
+      <point x="731.75" y="372.0" />
+      <point x="714.25" y="372.0" />
+      <point x="46.0" y="48.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.SingleThreadedSudokuValidator" target="com.flurry.sudoku.validator.ColSudokuValidator">
+      <point x="-47.25" y="-37.5" />
+      <point x="390.75" y="537.0" />
+      <point x="368.29499999999996" y="537.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.controller.InMemorySudokuController" target="com.flurry.sudoku.reader.InMemorySudokuReader">
+      <point x="169.875" y="-49.0" />
+      <point x="762.80625" y="662.0" />
+      <point x="952.75" y="662.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.controller.InMemorySudokuController" target="com.flurry.sudoku.validator.SingleThreadedSudokuValidator">
+      <point x="-56.625" y="-49.0" />
+      <point x="536.30625" y="662.0" />
+      <point x="438.0" y="662.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.SingleThreadedSudokuValidator" target="com.flurry.sudoku.validator.BlockSudokuValidator">
+      <point x="47.25" y="-37.5" />
+      <point x="485.25" y="537.0" />
+      <point x="552.795" y="537.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.reader.InMemorySudokuReader" target="com.flurry.sudoku.exception.SudokuException">
+      <point x="-74.75" y="-93.5" />
+      <point x="878.0" y="95.0" />
+      <point x="475.15125" y="95.0" />
+      <point x="92.80000000000007" y="37.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.Main" target="com.flurry.sudoku.controller.InMemorySudokuController">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.ColSudokuValidator" target="com.flurry.sudoku.validator.AbstractSudokuValidator">
+      <point x="39.5" y="-49.0" />
+      <point x="407.79499999999996" y="362.0" />
+      <point x="622.25" y="362.0" />
+      <point x="-46.0" y="48.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.RowSudokuValidator" target="com.flurry.sudoku.exception.SudokuException">
+      <point x="-40.75" y="-49.0" />
+      <point x="147.04499999999996" y="115.0" />
+      <point x="289.5512499999999" y="115.0" />
+      <point x="-92.80000000000001" y="37.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.SingleThreadedSudokuValidator" target="com.flurry.sudoku.validator.RowSudokuValidator">
+      <point x="-141.75" y="-37.5" />
+      <point x="296.25" y="537.0" />
+      <point x="187.79499999999996" y="537.0" />
+      <point x="0.0" y="49.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.controller.InMemorySudokuController" target="com.flurry.sudoku.validator.AbstractSudokuValidator">
+      <point x="56.625" y="-49.0" />
+      <point x="649.55625" y="662.0" />
+      <point x="742.75" y="662.0" />
+      <point x="742.75" y="372.0" />
+      <point x="760.25" y="372.0" />
+      <point x="92.0" y="48.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.AbstractSudokuValidator" target="com.flurry.sudoku.validator.IValidator">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.BlockSudokuValidator" target="com.flurry.sudoku.exception.SudokuException">
+      <point x="-42.75" y="-60.0" />
+      <point x="510.04499999999996" y="342.0" />
+      <point x="485.73875" y="342.0" />
+      <point x="485.73875" y="115.0" />
+      <point x="382.35124999999994" y="115.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.ColSudokuValidator" target="com.flurry.sudoku.exception.SudokuException">
+      <point x="-39.5" y="-49.0" />
+      <point x="328.79499999999996" y="115.0" />
+      <point x="335.95124999999996" y="115.0" />
+      <point x="-46.39999999999998" y="37.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.AbstractSudokuValidator" target="com.flurry.sudoku.exception.SudokuException">
+      <point x="-76.66666666666669" y="-48.5" />
+      <point x="591.5833333333333" y="105.0" />
+      <point x="428.75125" y="105.0" />
+      <point x="46.40000000000009" y="37.0" />
+    </edge>
+    <edge source="com.flurry.sudoku.reader.InMemorySudokuReader" target="com.flurry.sudoku.reader.ISudokuReader">
+      <point x="74.75" y="-93.5" />
+      <point x="49.75" y="37.5" />
+    </edge>
+    <edge source="com.flurry.sudoku.validator.RowSudokuValidator" target="com.flurry.sudoku.validator.AbstractSudokuValidator">
+      <point x="40.75" y="-49.0" />
+      <point x="228.54499999999996" y="352.0" />
+      <point x="576.25" y="352.0" />
+      <point x="-92.0" y="48.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6026119402985075" x="552.3777089783281" y="486.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
