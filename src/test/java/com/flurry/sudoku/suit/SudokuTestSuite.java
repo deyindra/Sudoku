@@ -1,6 +1,7 @@
 package com.flurry.sudoku.suit;
 
 import com.flurry.sudoku.controller.InMemorySudokuController;
+import com.flurry.sudoku.controller.InMemorySudokuControllerTest;
 import com.flurry.sudoku.reader.FailedInMemorySudokuReaderInitializationTest;
 import com.flurry.sudoku.reader.FailureInMemorySudokuReaderTest;
 import com.flurry.sudoku.reader.SuccessInMemorySudokuReaderInitializationTest;
@@ -24,7 +25,7 @@ import org.junit.runners.Suite;
         SuccessSudokuBlockValidatorTest.class,
         FailureSudokuBlockValidatorTest.class,
         SingleThreadedSudokuValidatorTest.class,
-        InMemorySudokuController.class
+        InMemorySudokuControllerTest.class
 })
 public class SudokuTestSuite {
 }
