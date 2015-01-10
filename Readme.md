@@ -37,7 +37,7 @@ Building and Execution
         tar -xvf ../Sudoku-bin.tar
         
 ##### 4. Execute the following command to check if the sudoku solution is valid or not
-        java -jar Sudoku-1.0-SNAPSHOT.jar <<Length of the Side of the Sudoku plus game>> <<Input file which contains all the number as comma seperated value>>
+        java -jar Sudoku-1.0-SNAPSHOT.jar <<Length of the Side of the Sudoku plus game>> <<Input file which contains all the number as comma seperated value>> <<single|multi>>
 
         Please note while reading from input files program will determine if all the numbers from ranging from 1 to N where N is the length of the side
 
