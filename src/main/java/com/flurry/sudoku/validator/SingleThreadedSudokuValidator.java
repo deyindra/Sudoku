@@ -14,7 +14,7 @@ import com.flurry.sudoku.reader.ISudokuReader;
  * @see com.flurry.sudoku.validator.ColSudokuValidator
  * @see com.flurry.sudoku.validator.BlockSudokuValidator
  */
-public final class SingleThreadedSudokuValidator extends AbstractSudokuValidator {
+final class SingleThreadedSudokuValidator extends AbstractSudokuValidator {
 
     public SingleThreadedSudokuValidator(ISudokuReader reader) throws SudokuException {
         super(reader);

@@ -4,7 +4,8 @@ import com.flurry.sudoku.exception.SudokuException;
 import com.flurry.sudoku.reader.ISudokuReader;
 import com.flurry.sudoku.reader.InMemorySudokuReader;
 import com.flurry.sudoku.validator.AbstractSudokuValidator;
-import com.flurry.sudoku.validator.SingleThreadedSudokuValidator;
+import com.flurry.sudoku.validator.ValidatorFactory;
+import com.flurry.sudoku.validator.constant.ValidatorType;
 
 /**
  * @author idey
@@ -12,15 +13,15 @@ import com.flurry.sudoku.validator.SingleThreadedSudokuValidator;
  * and pass the same to {@link com.flurry.sudoku.validator.SingleThreadedSudokuValidator}
  */
 public class InMemorySudokuController implements ISudokuController{
-    private AbstractSudokuValidator singleThreadedSudokuValidator;
+    private AbstractSudokuValidator abstractSudokuValidator;
 
-    public InMemorySudokuController(int number, String filePath) throws SudokuException{
+    public InMemorySudokuController(int number, String filePath, ValidatorType type) throws SudokuException{
         ISudokuReader reader = new InMemorySudokuReader(number, filePath);
-        singleThreadedSudokuValidator = new SingleThreadedSudokuValidator(reader);
+        abstractSudokuValidator = ValidatorFactory.getValidator(type,reader);
     }
 
     @Override
     public boolean performValidation() throws SudokuException {
-        return singleThreadedSudokuValidator.checkSudoku();
+        return abstractSudokuValidator.checkSudoku();
     }
 }

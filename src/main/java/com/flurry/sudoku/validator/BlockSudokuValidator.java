@@ -10,7 +10,7 @@ import java.util.BitSet;
  * Validate all numbers in a given block. extends {@link com.flurry.sudoku.validator.AbstractSudokuValidator}
  * @see com.flurry.sudoku.validator.AbstractSudokuValidator
  */
-public final class BlockSudokuValidator extends AbstractSudokuValidator{
+final class BlockSudokuValidator extends AbstractSudokuValidator{
     private int row;
     private int col;
 

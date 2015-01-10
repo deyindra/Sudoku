@@ -10,7 +10,7 @@ import java.util.BitSet;
  * Validate all numbers in a given row. extends {@link com.flurry.sudoku.validator.AbstractSudokuValidator}
  * @see com.flurry.sudoku.validator.AbstractSudokuValidator
  */
-public final class RowSudokuValidator extends AbstractSudokuValidator{
+final class RowSudokuValidator extends AbstractSudokuValidator{
     public int row;
 
     /**
