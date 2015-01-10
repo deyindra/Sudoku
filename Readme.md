@@ -47,6 +47,4 @@ Current Limitation and Enhancement
 ===================================
         
 ### 1 Currently all the inputs are stored in 2 dimensional array in the memory. This is initially good for small set of number. But. not certainly good for large number of inputs. Perhaps, this can be enhanced to read the structure from the disk in case inputs are too large.
-### 2 Currently checking all number(s) row wise, column wise and region wise are happening in a sequential order. This is certainly good for small set of inputs, e.g. 4X4 or 9X9 or 16X16. But if the set of inputs are too big then processing row wise, column wise and region wise sequentially will take longer time. This can be improved by running all these three checks in parallel and update the global variable (e.g. AtomicBoolean) in case one of the validation failed and come out of the loop gracefully. 
- 
   
